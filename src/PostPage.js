@@ -7,7 +7,7 @@ export default function() {
   const { slug } = useParams();
 
   React.useEffect(() => {
-    const current = posts.filter(post => post.slug === slug)[0];
+    const current = posts.find(post => post.slug === slug);
     setPost(current);
   }, [slug]);
 

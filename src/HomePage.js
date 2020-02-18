@@ -3,7 +3,6 @@ import { posts, authors } from "./data";
 import { Link } from "react-router-dom";
 
 export default function() {
-  // authors.find((author) => author.slug === post.author)
   return posts.map(post => {
     return (
       <li key={post.slug}>
