@@ -20,7 +20,7 @@ export default function() {
       <h1>Posts by: {author.name}</h1>
       <ul>
         {authorPosts.map(post => (
-          <li>
+          <li key={post.slug}>
             <Link to={`/blog/${post.slug}`}>{post.title}</Link>
           </li>
         ))}
